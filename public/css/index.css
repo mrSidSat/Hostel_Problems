@@ -1,11 +1,14 @@
-.header {    
-    margin: 59px 0px 0px;
-    color: floralwhite;
+:root{
+  --hfcolor: rgb(128, 0, 128, 1);  
+  --text-color: floralwhite;
+}
+
+.header {
+    color: var(--text-color);
 }
 
 .navbar-dark {
-    margin: 0px 0px;
-    background-color: #1E40AF;
+    background-color: var(--hfcolor);
 }
 
 .row-header {
@@ -21,20 +24,35 @@
 
 .footer {
     color:#fff;
-    background-color: #1E40AF;
+    background-color: var(--hfcolor);
     text-align: start;
     padding: 5px 0px;
 }
 
-.address {
+.links{
+  padding: 5px 0px 5px;
+  text-align-last: center;
+}
+
+.add{
+  padding: 5px 0px 15px;
+  text-align: center;
+}
+
+address {
   font-size: 90%;
   margin: 0px;
   
 }
+
+.justify-content-center{
+  padding: 30px 0px;
+}
+
 .justify-content-center > p {
-    color: #fff;
-    font-size: 90%;
-    font-style: oblique;
+  color: #fff;
+  font-size: 90%;
+  font-style: oblique;
 }
 
 .tab-content {
@@ -45,16 +63,27 @@
 }
 
 .table{
-    text-align: center;  
+    text-align: center;
+    background-color: var(--hfcolor);
+    color: floralwhite;  
 }
-
-.container{
-  margin: 0;
-  padding: 0;
-  max-width: 3000px;
-  position: relative;
+.table > tbody{
+  color: black;
+  -webkit-text-stroke-width: thin;
+  background-color: rgb(255, 255, 255, 0.7);
 }
 
 .button{
   position: relative;
+}
+
+.carousel-inner{  
+  size: relative;
+}
+
+a{
+  color: var(--text-color);
+}
+a:hover {
+  color: #fff;
 }
